@@ -152,9 +152,9 @@ nav a:hover::after, nav a.active::after{width:100%;}
   background:linear-gradient(180deg,#fff 10%, var(--lavender) 60%, var(--indigo) 130%);
   -webkit-background-clip:text;background-clip:text;color:transparent;
 }
-.hero .headline-line{overflow:hidden;}
-.hero .headline-line span{display:inline-block;transform:translateY(100%);animation:riseIn .9s var(--ease) forwards;}
-@keyframes riseIn{0%{transform:translateY(100%);}to{transform:translateY(0);}}
+.hero .headline-line{overflow:hidden;display:block;height:auto;}
+.hero .headline-line span{display:block;animation:riseIn .9s var(--ease) both;}
+@keyframes riseIn{0%{transform:translateY(100%);opacity:0;}to{transform:translateY(0);opacity:1;}}
 .hero-sub{
   margin-top:26px;font-size:18px;line-height:1.65;color:var(--muted);max-width:520px;
   font-weight:400;
